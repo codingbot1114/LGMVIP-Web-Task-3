@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Submission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="c1 col">
+            <h1>Project Submission Form</h1>
+            <form id="fo">
+                <table>
+                    <tr>
+                        <td>Student Name:</td>
+                        <td class="a c"><input class="d" type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID:</td>
+                        <td class="a c"><input class="d" type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Project Name:</td>
+                        <td class="a c"><input class="d" type="text" name="name" id="pname"></td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>Project Type:</td>
+                        <td class="a c h"><span><input type="radio" class="f" name="type" id="Software" value="Software">Software</span><span><input class="f" type="radio" name="type" id="Hardware" value="Hardware">Hardware</span></td>
+                    </tr>
+                    <tr rowspan="3">
+                        <td>Skills Used:</td>
+                        <td class="a c h">
+                            <span><input class="g" type="checkbox" name="skills" id="Python" value="Python">Python </span>
+                            <span><input class="g" type="checkbox" name="skills" class="g" id="" value="Java">Java </span>
+                            <span><input type="checkbox" name="skills" value="SQL" id="SQL">SQL </span>
+                            <span><input type="checkbox" name="skills" value="Circuit Design" id="Circuit Design ">Circuit Design </span>
+                            <span><input type="checkbox" name="skills" value="AIML" id="AIML">AIML </span>
+                            <span><input type="checkbox" name="skills" value="DataScience" id="DataScience">DataScience </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="a"><input class="e b" type="button" onclick="fun()" value="Submit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="a"><input class="e r" type="reset" onclick="fun()" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="c2 col" id="c">
+            <h1>Submitted Project Details</h1>
+            <div class="ss" id="ss">
+
+            </div> 
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
